@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+RepData_PeerAssessment1.Rproj
+*.html
+*.md
+data
+PA1_SJJ_files

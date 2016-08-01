@@ -21,6 +21,7 @@ unzip('activity.zip', exdir = "data")
 activity <- read.csv('data/activity.csv')
 
 library(dplyr)
+
 daily <- activity %>% 
         select(date, steps) %>%
         group_by(date) %>%
@@ -137,7 +138,7 @@ mediansteps_imputed <- median(daily_imputed$steps, na.rm = FALSE)
 print(paste("Median number of steps per day = ", mediansteps_imputed))
 ```
 
-The mean is unchanged, howver replacing NA values with the resoective means has changed the median, which is now equal to the overall mean.
+The mean is unchanged, however replacing NA values with the respective means has changed the median, which is now equal to the overall mean.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
